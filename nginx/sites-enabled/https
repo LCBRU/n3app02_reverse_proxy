@@ -8,7 +8,7 @@ server {
     ssl_certificate /cert/uhlbriccsext02.xuhl-tr.nhs.uk.crt;
     ssl_certificate_key /cert/uhlbriccsext02.xuhl-tr.nhs.uk.key;
 
-    location /n3_access_check {
+    location /n3_access_check/ {
         proxy_pass http://uhlbriccsext02.xuhl-tr.nhs.uk:8101;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
@@ -35,7 +35,7 @@ server {
     ssl_certificate /cert/genvasc.uhl-tr.nhs.uk.crt;
     ssl_certificate_key /cert/genvasc.uhl-tr.nhs.uk.key;
 
-    location /n3_access_check {
+    location /n3_access_check/ {
         proxy_pass http://uhlbriccsext02.xuhl-tr.nhs.uk:8101;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
