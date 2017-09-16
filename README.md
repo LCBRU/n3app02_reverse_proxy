@@ -1,2 +1,2 @@
-# n3app02_reverse_proxy
-Reverse proxy for the N3 App02 server
+# docker_nginx_app02
+Reverse proxy for applications hosted on APP02
