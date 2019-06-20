@@ -4,6 +4,7 @@ server {
     server_name uhlbriccsext02.xuhl-tr.nhs.uk;
     charset utf-8;
     ssl on;
+    client_max_body_size 1000m;
 
     ssl_certificate /cert/uhlbriccsext02.xuhl-tr.nhs.uk.crt;
     ssl_certificate_key /cert/uhlbriccsext02.xuhl-tr.nhs.uk.key;
@@ -39,6 +40,7 @@ server {
     server_name genvasc.uhl-tr.nhs.uk;
     charset utf-8;
     ssl on;
+    client_max_body_size 1000m;
 
     ssl_certificate /cert/genvasc.uhl-tr.nhs.uk.crt;
     ssl_certificate_key /cert/genvasc.uhl-tr.nhs.uk.key;
