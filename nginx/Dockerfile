@@ -1,5 +1,6 @@
 FROM nginx
 LABEL maintainer="Richard Bramley <rabramley@gmail.com>"
 
-ADD sites-enabled/ /etc/nginx/sites-enabled/
+RUN rm /etc/nginx/conf.d/default.conf
+ADD sites-enabled/ /etc/nginx/conf.d/
 ADD cert /cert
